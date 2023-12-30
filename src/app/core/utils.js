@@ -629,7 +629,7 @@ export default class Utils {
       titleElem = document.createElement('h3');
       titleElem.innerText = 'Connecting to BEAM Web Wallet.';
       subtitle = document.createElement('p');
-      subtitle.innerText = ['To use ', InitParams.appname, ' you should have BEAM Web Wallet installed and allow connection.'].join('');
+      subtitle.innerText = ['To use ', InitParams.appname, ' you should have the Beam Web Wallet installed and allow connections.'].join('');
 
       if (headless) {
         loadContainer.style.backgroundColor = 'rgba(3, 91, 133, 0.95)';

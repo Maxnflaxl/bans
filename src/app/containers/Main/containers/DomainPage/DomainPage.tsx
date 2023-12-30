@@ -34,7 +34,7 @@ const DomainPage:React.FC = (props) => {
 
   const renderAll = () => (domains.length ? domains.map(({ name, hExpire }:IDomains) => (<Section domain={name} hExpire={hExpire} key={name} />)) : <EmptyPage />
   );
-  const renderFavorites = () => <EmptyPage emptyText='You do not have any favorites domains'/>
+  const renderFavorites = () => <EmptyPage emptyText='You do not have any favorite domains'/>
   const renderContains = () => {
     switch (active) {
       case 1:

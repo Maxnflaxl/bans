@@ -105,11 +105,11 @@ const Registration:React.FC<RegistrationsProps> = ({
 }) => {
   const beam = '.beam';
   const [period, setPeriod] = useState<number>(1/* selectedDomain.alreadyexistingperiod */);
-  const now = !isRenew ? moment().format('LL') : 'Current subscribe period';
+  const now = !isRenew ? moment().format('LL') : 'Current subscription period';
   const till: string = useMemo(() => {
     //   TODO: Calculated and to format
     if (isRenew) {
-      return `Current subscribe period + ${period} years`;
+      return `Current subscription period + ${period} years`;
     }
     moment()
       .add(period, 'years')
